@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" data-palette="pink">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maria Matloub · People first. AI second.</title>
+<meta name="description" content="I help leaders and teams think, create and ship with AI. Hands-on, on your real work. 1:1, team sessions and talks.">
+<meta property="og:title" content="Maria Matloub · People first. AI second.">
+<meta property="og:description" content="Hands-on AI for leaders and teams. 1:1, team sessions and talks.">
+<meta property="og:image" content="https://mariamatloub.com/images/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--display:'Bricolage Grotesque',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif}
+/* palette options (preview only, pick one) */
+[data-palette="mono"]{--paper:#FFFFFF;--ink:#0B0B0B;--muted:#6B6B6B;--line:#E6E6E6;--card:#F4F4F4;--accent:#0B0B0B;--on-accent:#FFFFFF;--soft:#EDEDED;--deep:#0B0B0B;--on-deep:#FFFFFF;--deep-line:#333}
+[data-palette="mono"] .hero h1 span{color:transparent;-webkit-text-stroke:2px #0B0B0B}
+[data-palette="pink"]{--paper:#FFFFFF;--ink:#0B0B0B;--muted:#666666;--line:#E6E6E6;--card:#F4F4F4;--accent:#F300AC;--on-accent:#FFFFFF;--soft:#FFE3F4;--deep:#0B0B0B;--on-deep:#FFFFFF;--deep-line:#333333}
+[data-palette="night"]{--paper:#070738;--ink:#FFFFFF;--muted:#B4B3D0;--line:#1F1F55;--card:#10104A;--accent:#F300AC;--on-accent:#FFFFFF;--soft:#2A1450;--deep:#03031F;--on-deep:#FFFFFF;--deep-line:#2C2C5E}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--line);scroll-margin-top:12px}
+h1,h2,h3{font-family:var(--display);line-height:.95;letter-spacing:-.02em}
+h2{font-size:clamp(36px,7vw,64px);font-weight:800;margin-bottom:16px}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:580px}
+.btn{display:inline-block;padding:15px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.accent{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:var(--display);font-weight:800;font-size:20px}
+nav .btn{padding:10px 18px;font-size:15px}
+
+.hero{padding:32px 0 72px;border:0}
+.hero-grid{display:grid;gap:36px;align-items:end}
+.hero h1{font-size:clamp(50px,11vw,106px);font-weight:800;line-height:1.02}
+.hero h1 span{color:var(--accent);white-space:nowrap}
+.hero .sub{font-size:clamp(19px,2.4vw,23px);margin-top:24px;max-width:540px}
+.tag{display:inline-block;margin-top:18px;background:var(--soft);padding:6px 14px;border-radius:999px;font-weight:500;font-size:15px}
+.portrait{position:relative;overflow:hidden;aspect-ratio:4/5;background:var(--card);border:1px solid var(--line);border-radius:24px;display:grid;place-items:center;color:var(--muted);font-size:14px;width:100%;max-width:380px}
+@media(min-width:860px){.hero-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}.portrait{justify-self:end}}
+
+.tcs{display:grid;gap:14px;margin-top:36px}
+@media(min-width:860px){.tcs{grid-template-columns:repeat(3,1fr)}}
+.tcs article{background:var(--card);border-radius:20px;padding:26px}
+.tcs h3{font-size:44px;font-weight:800}
+.tcs h3 i{font-style:normal;color:var(--accent)}
+.tcs p{color:var(--muted);margin:8px 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips li{list-style:none;border:1.5px solid var(--ink);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:500}
+
+.steps{display:grid;gap:10px;margin:32px 0 44px;counter-reset:s}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps div{counter-increment:s;padding:18px 0;border-top:2px solid var(--ink)}
+.steps div::before{content:"0" counter(s);font-family:var(--display);font-weight:800;color:var(--accent);display:block;font-size:22px}
+.steps b{font-family:var(--display);font-size:24px;display:block;margin:4px 0}
+.steps span{color:var(--muted);font-size:16px}
+.offers{display:grid;gap:14px}
+@media(min-width:860px){.offers{grid-template-columns:repeat(3,1fr)}}
+.offer{border:2px solid var(--ink);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px}
+.offer.dark{background:var(--deep);color:var(--on-deep);border-color:var(--deep)}
+.offer small{font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;opacity:.7}
+.offer h3{font-size:32px;font-weight:800}
+.offer p{opacity:.85;flex:1}
+.offer .talks{font-size:14px;opacity:.8}
+.offer .btn{align-self:flex-start;margin-top:8px}
+
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:26px 20px;margin:36px 0}
+@media(min-width:860px){.stats{grid-template-columns:repeat(4,1fr);gap:26px 32px}}
+.stats b{font-family:var(--display);font-size:clamp(44px,6vw,62px);font-weight:800;display:block;line-height:1}
+.stats span{color:var(--muted);font-size:15px}
+.strip{border-top:1px solid var(--line);padding:16px 0;font-size:15px;color:var(--muted)}
+.strip b{color:var(--ink);margin-right:6px}
+.more{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--soft);border-radius:20px;padding:22px 24px;margin-top:20px;text-decoration:none}
+.more b{font-family:var(--display);font-size:22px}
+.more span{font-size:15px;color:var(--muted)}
+
+.brands{border-top:1px solid var(--line);padding:22px 0}
+.brands small{display:block;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--muted);margin-bottom:10px}
+.brands span{white-space:nowrap}
+.brands p{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,28px);line-height:1.3;letter-spacing:-.01em}
+.gallery{display:grid;grid-template-columns:1fr;gap:10px;margin-top:28px}
+@media(min-width:560px){.gallery{grid-template-columns:1fr 1fr}}
+@media(min-width:860px){.gallery{grid-template-columns:repeat(3,1fr);gap:14px}}
+.gallery figure{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.gallery figure div{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:13px}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gallery figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.end{background:var(--deep);color:var(--on-deep);border:0;text-align:center}
+.end h2{font-size:clamp(44px,9vw,96px)}
+.end h2 span{color:var(--accent)}
+[data-palette="mono"] .end h2 span,[data-palette="mono"] .offer.dark .btn.accent,[data-palette="mono"] .end .btn.accent{color:#fff}
+[data-palette="mono"] .offer.dark .btn.accent,[data-palette="mono"] .end .btn.accent{background:#fff;color:#0B0B0B;border-color:#fff}
+.end .btn{font-size:18px;padding:18px 30px}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:40px}
+.links a{display:grid;place-items:center;width:52px;height:52px;border:1.5px solid var(--deep-line);border-radius:50%;transition:background .15s,border-color .15s}
+.links a:hover{background:var(--accent);border-color:var(--accent)}
+.links svg{width:22px;height:22px;fill:currentColor}
+footer{background:var(--deep);color:var(--on-deep);font-size:14px;text-align:center;padding:0 20px 100px}
+footer span{opacity:.6}
+@media(min-width:860px){footer{padding-bottom:36px}}
+
+.sticky{transition:opacity .2s,transform .2s;position:fixed;left:12px;right:12px;bottom:12px;z-index:9;text-align:center;background:var(--accent);color:var(--on-accent);padding:15px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+[data-palette="mono"] .sticky{background:#0B0B0B;color:#fff}
+@media(min-width:860px){.sticky{display:none}}
+
+/* preview-only palette switcher */
+.switch{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:4px;background:#fff;border:1px solid #ddd;border-radius:999px;padding:4px;box-shadow:0 4px 16px rgba(0,0,0,.12);font-family:var(--body)}
+.switch button{border:0;background:none;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:600;cursor:pointer;color:#111}
+.switch button.on{background:#111;color:#fff}
+body{padding-top:0}
+
+@media(min-width:860px){.switch{top:auto;bottom:16px}}
+
+dialog{margin:auto;border:0;border-radius:24px;padding:0;width:min(560px,calc(100% - 24px));max-height:calc(100dvh - 24px);background:var(--paper);color:var(--ink);font-family:var(--body)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+#contact-form{display:flex;flex-direction:column;gap:14px;padding:26px}
+.m-head{display:flex;justify-content:space-between;align-items:center}
+.m-head h3{font-size:34px;font-weight:800}
+.m-close{border:0;background:var(--card);width:40px;height:40px;border-radius:50%;font-size:24px;cursor:pointer;color:var(--ink)}
+#contact-form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+#contact-form em{font-style:normal;font-weight:400;color:var(--muted)}
+#contact-form input,#contact-form select,#contact-form textarea{font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);width:100%}
+#contact-form input:focus,#contact-form select:focus,#contact-form textarea:focus{outline:none;border-color:var(--accent)}
+.m-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.m-phone{display:grid;grid-template-columns:minmax(0,150px) 1fr;gap:8px}
+.m-choice{border:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.m-choice label{position:relative}
+.m-choice input{position:absolute;opacity:0}
+.m-choice span{display:block;text-align:center;padding:12px;border:1.5px solid var(--ink);border-radius:999px;font-size:15px;cursor:pointer}
+.m-choice input:checked+span{background:var(--ink);color:var(--paper)}
+.m-choice input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.m-send{align-self:stretch;text-align:center;cursor:pointer;font-size:17px}
+.m-note{font-size:14px;color:var(--muted);min-height:1em}
+button.btn{font:inherit;font-weight:700;cursor:pointer}
+@media(max-width:480px){.m-row{grid-template-columns:1fr}}
+.bio h2 span{color:var(--accent)}
+.bio .lead{max-width:620px;color:var(--ink);margin-bottom:14px}
+.bio-grid{display:grid;gap:12px}
+@media(min-width:860px){.bio-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:40px;align-items:start}}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <nav><div class="logo">Maria Matloub</div><a class="btn primary" href="#one">Book a call</a></nav>
+
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <h1>People first.<br><span>AI second.</span></h1>
+        <p class="sub">I help leaders and teams think, create and ship with AI. I teach you, build it with you, or build it for you. Hands-on, on your real work.</p>
+        <span class="tag">Not technical? Neither am I.</span>
+        <div class="btns">
+          <a class="btn primary" href="#one">Work with me 1:1</a>
+          <a class="btn" href="#team">For teams</a>
+        </div>
+      </div>
+      <div class="portrait">[ portrait of Maria ]<img src="images/portrait.jpg" alt="Maria Matloub speaking" width="800" height="1000" onerror="this.remove()"></div>
+    </div>
+  </header>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>The team you didn't have before.</h2>
+    <p class="lead">AI can be the extra hands you never had the budget for. You stay in charge. It does the heavy lifting.</p>
+    <div class="tcs">
+      <article>
+        <h3>Think<i>.</i></h3>
+        <p>Use AI as a sounding board to ideate, co-create, experiment and test ideas before spending resources.</p>
+        <ul class="chips"><li>Ideate</li><li>Co-create</li><li>Experiment</li><li>Test before you spend</li></ul>
+      </article>
+      <article>
+        <h3>Create<i>.</i></h3>
+        <p>Produce writing, documents, visuals and guides while keeping your own voice.</p>
+        <ul class="chips"><li>Writing</li><li>Presentations</li><li>Images</li><li>Videos</li><li>Guides</li><li>Templates</li><li>Digital avatars</li><li>Prototypes</li></ul>
+      </article>
+      <article>
+        <h3>Ship<i>.</i></h3>
+        <p>Deploy AI agents to handle bigger tasks like research, business plans and revenue models.</p>
+        <ul class="chips"><li>Research</li><li>Business plans</li><li>Revenue models</li><li>Competitive analysis</li><li>MVP planning</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>I teach. I build.<br>Usually both.</h2>
+    <div class="steps">
+      <div><b>I assess</b><span>Where AI helps you most, and where it doesn't.</span></div>
+      <div><b>We pick</b><span>We agree what to do first. Real work only.</span></div>
+      <div><b>We build</b><span>Side by side, or I build it for you.</span></div>
+      <div><b>You own it</b><span>You know how it works and how to keep it going.</span></div>
+    </div>
+    <div class="offers">
+      <div class="offer dark" id="one">
+        <small>For leaders and professionals</small>
+        <h3>1:1</h3>
+        <p>Private and hands-on. Bring your work, leave with it done and your own AI team set up.</p>
+        <a class="btn accent" href="https://calendar.app.google/opNffSuBsnyb6kNG7" target="_blank" rel="noopener">Book a call</a>
+      </div>
+      <div class="offer" id="team">
+        <small>For teams</small>
+        <h3>Team</h3>
+        <p>Half or full days. Your team leaves with things made, agents set up and a shared way of working.</p>
+        <button class="btn primary" type="button" data-contact="team">Work with your team</button>
+      </div>
+      <div class="offer" id="talks">
+        <small>For events</small>
+        <h3>Talks</h3>
+        <p>Keynotes and panels on the human side of AI, design leadership and creative thinking. Or a talk created just for your audience.</p>
+        <p class="talks">Your zipper is open · The empathy equation · Boredom is a requirement · Jump?! Or big bap ballet · The worst case scenario saga</p>
+        <button class="btn primary" type="button" data-contact="talk">Book a talk</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bio">
+  <div class="wrap bio-grid">
+    <h2>Hi, I'm <span>Maria.</span></h2>
+    <div>
+      <p class="lead">I'm a designer and strategist based in Milan. I've spent my career helping brands and teams design better experiences and work better together, across industries and countries.</p>
+      <p class="lead">People started asking me to help them work with AI. Now I love doing it in a way that feels human. Hands-on, clear and a bit fun. No code, no jargon.</p>
+      <p class="lead">The goal is always the same: better business, with people at the centre.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>15 years with people.<br>Now with AI.</h2>
+    <p class="lead">Design, CX and innovation for global brands.</p>
+    <div class="stats">
+      <div><b>20+</b><span>Fortune 500 AI adoption programs, with Adobe</span></div>
+      <div><b>500+</b><span>professionals trained</span></div>
+      <div><b>1,000+</b><span>students from 60+ nationalities</span></div>
+      <div><b>20+</b><span>keynotes in 6 countries</span></div>
+    </div>
+    <div class="brands">
+      <small>Projects and workshops for</small>
+      <p><span>AC Milan</span> · <span>Adobe</span> · <span>Amazon</span> · <span>Barclays</span> · <span>Bayer</span> · <span>Bvlgari</span> · <span>Cognizant</span> · <span>Deloitte</span> · <span>Fiat Chrysler Automobiles</span> · <span>Founder Institute</span> · <span>Grab</span> · <span>Le Point</span> · <span>Luxottica</span> · <span>McKinsey</span> · <span>MSC Cruises</span> · <span>PepsiCo</span> · <span>Prada</span> · <span>Publicis</span> · <span>PwC</span> · <span>Red Bull</span></p>
+    </div>
+    <div class="strip"><b>Stages</b> Milan Design Week · Adobe Global · IxDA · Digital Design Days · IIT Bombay · Level39 London</div>
+    <div class="strip"><b>Teaching</b> Domus Academy · LUM School of Management · Lebanese American University · Il Sole 24 Ore Business School</div>
+    <div class="strip"><b>Mentor</b> Seedstars · Startupbootcamp · Founder Institute · European Innovation Academy · Scale 7 · Loyal VC</div>
+    <a class="more" href="https://ggutt.com" target="_blank" rel="noopener"><div><b>Fractional design leadership</b><br><span>My design work and what clients say</span></div><span>ggutt.com →</span></a>
+  </div>
+</section>
+
+<section class="gallery-sec">
+  <div class="wrap">
+    <h2>In the room.</h2>
+    <div class="gallery">
+      <figure><div>[ photo 1 ]</div><img src="images/gallery-1.jpg" alt="Maria speaking at Digital Design Days" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 2 ]</div><img src="images/gallery-2.jpg" alt="Workshop in Seoul" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 3 ]</div><img src="images/gallery-3.jpg" alt="Talk in London" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 4 ]</div><img src="images/gallery-4.jpg" alt="Sketching ideas by hand" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 5 ]</div><img src="images/gallery-5.jpg" alt="Hackathon kickoff" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 6 ]</div><img src="images/gallery-6.jpg" alt="In the GGUTT Talks studio" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 7 ]</div><img src="images/gallery-7.jpg" alt="Panel on digital learning" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 8 ]</div><img src="images/gallery-8.jpg" alt="Team workshop with sticky notes" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 9 ]</div><img src="images/gallery-9.jpg" alt="Talk at the Agorà stage" loading="lazy" width="960" height="540" onerror="this.remove()"></figure>
+      <figure><div>[ photo 10 ]</div><img src="images/gallery-10.jpg" alt="Talk at Blast" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 11 ]</div><img src="images/gallery-11.jpg" alt="Panel discussion" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+      <figure><div>[ photo 12 ]</div><img src="images/gallery-12.jpg" alt="Online session from the GGUTT studio" loading="lazy" width="1600" height="900" onerror="this.remove()"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <h2>Start with your<br><span>real work.</span></h2>
+    <div class="btns" style="justify-content:center"><a class="btn accent" href="https://calendar.app.google/opNffSuBsnyb6kNG7" target="_blank" rel="noopener">Book a call</a></div>
+    <div class="links"><a href="https://ggutt.substack.com/" target="_blank" rel="noopener" aria-label="Substack" title="Substack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg></a><a href="https://open.spotify.com/show/3f6umKidYdhdoPnxUMQM2e" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a><a href="https://podcasts.apple.com/us/podcast/gguttalks/id1546998038" target="_blank" rel="noopener" aria-label="Apple Podcasts" title="Apple Podcasts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0zm6.525 2.568c2.336 0 4.448.902 6.056 2.587 1.224 1.272 1.912 2.619 2.264 4.392.12.59.12 2.2.007 2.864a8.506 8.506 0 01-3.24 5.296c-.608.46-2.096 1.261-2.336 1.261-.088 0-.096-.091-.056-.46.072-.592.144-.715.48-.856.536-.224 1.448-.874 2.008-1.435a7.644 7.644 0 002.008-3.536c.208-.824.184-2.656-.048-3.504-.728-2.696-2.928-4.792-5.624-5.352-.784-.16-2.208-.16-3 0-2.728.56-4.984 2.76-5.672 5.528-.184.752-.184 2.584 0 3.336.456 1.832 1.64 3.512 3.192 4.512.304.2.672.408.824.472.336.144.408.264.472.856.04.36.03.464-.056.464-.056 0-.464-.176-.896-.384l-.04-.03c-2.472-1.216-4.056-3.274-4.632-6.012-.144-.706-.168-2.392-.03-3.04.36-1.74 1.048-3.1 2.192-4.304 1.648-1.737 3.768-2.656 6.128-2.656zm.134 2.81c.409.004.803.04 1.106.106 2.784.62 4.76 3.408 4.376 6.174-.152 1.114-.536 2.03-1.216 2.88-.336.43-1.152 1.15-1.296 1.15-.023 0-.048-.272-.048-.603v-.605l.416-.496c1.568-1.878 1.456-4.502-.256-6.224-.664-.67-1.432-1.064-2.424-1.246-.64-.118-.776-.118-1.448-.008-1.02.167-1.81.562-2.512 1.256-1.72 1.704-1.832 4.342-.264 6.222l.413.496v.608c0 .336-.027.608-.06.608-.03 0-.264-.16-.512-.36l-.034-.011c-.832-.664-1.568-1.842-1.872-2.997-.184-.698-.184-2.024.008-2.72.504-1.878 1.888-3.335 3.808-4.019.41-.145 1.133-.22 1.814-.211zm-.13 2.99c.31 0 .62.06.844.178.488.253.888.745 1.04 1.259.464 1.578-1.208 2.96-2.72 2.254h-.015c-.712-.331-1.096-.956-1.104-1.77 0-.733.408-1.371 1.112-1.745.224-.117.534-.176.844-.176zm-.011 4.728c.988-.004 1.706.349 1.97.97.198.464.124 1.932-.218 4.302-.232 1.656-.36 2.074-.68 2.356-.44.39-1.064.498-1.656.288h-.003c-.716-.257-.87-.605-1.164-2.644-.341-2.37-.416-3.838-.218-4.302.262-.616.974-.966 1.97-.97z"/></svg></a><a href="https://www.tiktok.com/@maria_ggutt" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://www.youtube.com/@ggutt_hub" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div>
+  </div>
+</section>
+<footer><span>© Maria Matloub · Milan</span></footer>
+
+<a class="sticky" href="#one">Book a call</a>
+<script>
+(function(){const st=document.querySelector('.sticky');const seen=new Set();
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?seen.add(e.target):seen.delete(e.target));
+const hide=seen.size>0;st.style.opacity=hide?0:1;st.style.transform=hide?'translateY(20px)':'none';st.style.pointerEvents=hide?'none':'auto';},{threshold:0.1});
+document.querySelectorAll('.hero .btns, #one, .end').forEach(el=>io.observe(el));})();
+</script>
+
+
+<dialog id="contact" aria-labelledby="contact-title">
+  <form method="POST" action="https://formsubmit.co/diana@ggutt.com" id="contact-form">
+    <input type="hidden" name="_subject" value="New enquiry from mariamatloub.com"><input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="m-head"><h3 id="contact-title">Let's talk.</h3><button type="button" class="m-close" aria-label="Close">×</button></div>
+    <fieldset class="m-choice">
+      <label><input type="radio" name="subject" value="Work with your team" required><span>Work with your team</span></label>
+      <label><input type="radio" name="subject" value="Book a talk"><span>Book a talk</span></label>
+    </fieldset>
+    <div class="m-row">
+      <label>Name<input name="name" autocomplete="given-name" required></label>
+      <label>Surname<input name="surname" autocomplete="family-name" required></label>
+    </div>
+    <label>Company<input name="company" autocomplete="organization" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+    <label><span>Phone <em>(optional)</em></span>
+      <div class="m-phone"><select name="country-code" aria-label="Country code"><option value="+39" selected>Italy +39</option><option value="+44">United Kingdom +44</option><option value="+1">United States / Canada +1</option><option value="+33">France +33</option><option value="+49">Germany +49</option><option value="+34">Spain +34</option><option value="+41">Switzerland +41</option><option value="+31">Netherlands +31</option><option value="+32">Belgium +32</option><option value="+351">Portugal +351</option><option value="+353">Ireland +353</option><option value="+43">Austria +43</option><option value="+46">Sweden +46</option><option value="+45">Denmark +45</option><option value="+47">Norway +47</option><option value="+30">Greece +30</option><option value="+961">Lebanon +961</option><option value="+971">United Arab Emirates +971</option><option value="+966">Saudi Arabia +966</option><option value="+974">Qatar +974</option><option value="+965">Kuwait +965</option><option value="+20">Egypt +20</option><option value="+962">Jordan +962</option><option value="+91">India +91</option><option value="+65">Singapore +65</option><option value="+61">Australia +61</option><option value="+82">South Korea +82</option><option value="+81">Japan +81</option><option value="+55">Brazil +55</option><option value="+27">South Africa +27</option><option value="other">Other</option></select><input type="tel" name="phone" autocomplete="tel-national" inputmode="tel"></div>
+    </label>
+    <label>Message<textarea name="message" rows="4" required placeholder="Tell me a bit about your team, event or dates."></textarea></label>
+    <button class="btn accent m-send" type="submit">Send</button>
+    <p class="m-note" aria-live="polite"></p>
+  </form>
+</dialog>
+<script>
+(function(){
+  const d=document.getElementById('contact'),f=document.getElementById('contact-form'),note=f.querySelector('.m-note');
+  document.querySelectorAll('[data-contact]').forEach(b=>b.addEventListener('click',()=>{
+    const v=b.dataset.contact==='talk'?'Book a talk':'Work with your team';
+    f.querySelector('input[value="'+v+'"]').checked=true; note.textContent=''; d.showModal();
+  }));
+  d.querySelector('.m-close').onclick=()=>d.close();
+  d.addEventListener('click',e=>{if(e.target===d)d.close();});
+  f.addEventListener('submit',e=>{
+    e.preventDefault(); const btn=f.querySelector('.m-send'); btn.disabled=true; note.textContent='Sending...';
+    fetch('https://formsubmit.co/ajax/diana@ggutt.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(r=>{if(!r.ok)throw 0; f.reset(); note.textContent='Thank you. I will get back to you soon.';})
+      .catch(()=>{note.textContent='Something went wrong. Please email diana@ggutt.com';})
+      .finally(()=>{btn.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>
