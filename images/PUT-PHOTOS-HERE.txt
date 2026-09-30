@@ -1,0 +1,14 @@
+Put Maria's photos in this folder with exactly these names:
+
+portrait.jpg      vertical 4:5, 1200 x 1500 px   (hero photo)
+gallery-1.jpg     horizontal 16:9, 1600 x 900 px (already added: GGUTT Talks thumbnail)
+gallery-2.jpg     horizontal 16:9, 1600 x 900 px
+gallery-3.jpg     horizontal 16:9, 1600 x 900 px
+gallery-4.jpg     horizontal 16:9, 1600 x 900 px
+gallery-5.jpg     horizontal 16:9, 1600 x 900 px
+gallery-6.jpg     horizontal 16:9, 1600 x 900 px
+share.jpg         horizontal, 1200 x 630 px      (preview image when the link is shared on WhatsApp, LinkedIn etc.)
+
+JPG, under 300 KB each (compress at squoosh.app or tinypng.com).
+Names must be lowercase and exactly as above.
+If a photo is missing, the page shows a grey placeholder instead.
