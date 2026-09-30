@@ -142,6 +142,10 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .m-note{font-size:14px;color:var(--muted);min-height:1em}
 button.btn{font:inherit;font-weight:700;cursor:pointer}
 @media(max-width:480px){.m-row{grid-template-columns:1fr}}
+.bio h2 span{color:var(--accent)}
+.bio .lead{max-width:620px;color:var(--ink);margin-bottom:14px}
+.bio-grid{display:grid;gap:12px}
+@media(min-width:860px){.bio-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:40px;align-items:start}}
 </style>
 </head>
 <body>
@@ -223,6 +227,17 @@ button.btn{font:inherit;font-weight:700;cursor:pointer}
   </div>
 </section>
 
+<section class="bio">
+  <div class="wrap bio-grid">
+    <h2>Hi, I'm <span>Maria.</span></h2>
+    <div>
+      <p class="lead">I'm a designer and strategist based in Milan. I've spent my career helping brands and teams design better experiences and work better together, across industries and countries.</p>
+      <p class="lead">People started asking me to help them work with AI. Now I love doing it in a way that feels human. Hands-on, clear and a bit fun. No code, no jargon.</p>
+      <p class="lead">The goal is always the same: better business, with people at the centre.</p>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <h2>15 years with people.<br>Now with AI.</h2>
@@ -240,7 +255,7 @@ button.btn{font:inherit;font-weight:700;cursor:pointer}
     <div class="strip"><b>Stages</b> Milan Design Week · Adobe Global · IxDA · Digital Design Days · IIT Bombay · Level39 London</div>
     <div class="strip"><b>Teaching</b> Domus Academy · LUM School of Management · Lebanese American University · Il Sole 24 Ore Business School</div>
     <div class="strip"><b>Mentor</b> Seedstars · Startupbootcamp · Founder Institute · European Innovation Academy · Scale 7 · Loyal VC</div>
-    <a class="more" href="https://ggutt.com"><div><b>Fractional design leadership</b><br><span>My design work and what clients say</span></div><span>ggutt.com →</span></a>
+    <a class="more" href="https://ggutt.com" target="_blank" rel="noopener"><div><b>Fractional design leadership</b><br><span>My design work and what clients say</span></div><span>ggutt.com →</span></a>
   </div>
 </section>
 
