@@ -8,7 +8,7 @@ section{padding:80px 0;border-top:1px solid var(--line);scroll-margin-top:12px}
 h1,h2,h3{font-family:var(--display);line-height:.98;letter-spacing:-.02em}
 h2{font-size:clamp(34px,6vw,56px);font-weight:800;margin-bottom:16px}
 h2 span,h1 span{color:var(--accent)}
-.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--muted);margin-bottom:14px}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--accent);margin-bottom:14px}
 .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:600px}
 .btn{display:inline-block;padding:14px 24px;border-radius:999px;font:700 16px var(--body);text-decoration:none;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s,color .15s}
 .btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
@@ -159,7 +159,7 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .pod .stats b{font-family:var(--display);font-size:36px;font-weight:800;display:block;line-height:1}
 .pod .stats span{font-size:14px;color:var(--muted)}
 .pod .btns{display:flex;flex-wrap:wrap;gap:10px}
-.brands p.eyebrow{font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.1em;line-height:1.5;color:var(--muted)}
+.brands p.eyebrow{font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.1em;line-height:1.5;color:var(--accent)}
 .teaser p{font-size:clamp(34px,5vw,56px)}
 .dot{color:var(--accent);font-weight:700}
 .hstats{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;margin:48px 0 8px;padding-top:28px;border-top:1px solid var(--line)}
