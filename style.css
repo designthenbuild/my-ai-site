@@ -191,3 +191,5 @@ h1,h2,h3,.brands p,.hstats b,.snap .vis b,.teaser p,.what .big,.talklist li,.pod
 .vis.photo small,.vis.photo b{display:none}
 .more-tile .vis b{font-size:clamp(30px,3vw,36px)!important}
 .note-box{background:var(--soft);border-radius:14px;padding:14px 18px;font-size:15px;margin-top:20px;max-width:760px}
+
+.logo .di{position:relative;display:inline-block}.logo .di::after{content:"";position:absolute;left:50%;top:.18em;width:.24em;height:.24em;border-radius:50%;background:var(--accent);transform:translateX(-50%)}

@@ -157,6 +157,7 @@ button.btn{font:inherit;font-weight:700;cursor:pointer}
 .proof{margin-top:28px;font-size:15px;color:var(--muted);text-align:center}
 .aquotes{display:grid;gap:14px;margin-top:40px}@media(min-width:860px){.aquotes{grid-template-columns:1fr 1fr}}.aq{background:var(--card);border-radius:20px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}.aq blockquote{font-family:var(--display);font-weight:500;font-size:19px;line-height:1.35}.aq figcaption{font-size:14px;color:var(--muted)}.aq figcaption b{display:block;color:var(--ink)}
 h1,h2,h3,.stats b,.brands p{font-weight:600 !important}
+.logo .di{position:relative;display:inline-block}.logo .di::after{content:"";position:absolute;left:50%;top:.18em;width:.24em;height:.24em;border-radius:50%;background:var(--accent);transform:translateX(-50%)}
 </style>
 <style>.sent-ok{background:#F300AC;color:#fff;text-align:center;padding:12px 20px;font:500 15px "DM Sans",system-ui,sans-serif}</style>
 </head>
@@ -164,7 +165,7 @@ h1,h2,h3,.stats b,.brands p{font-weight:600 !important}
 
 
 <div class="wrap">
-  <nav><a class="logo" href="./" style="text-decoration:none">Maria</a><div class="mm-menu"><a href="work.html">Work</a><a href="ai.html" style="color:var(--accent)">AI</a><a href="talks.html">Talks</a><a href="manifesto.html">Manifesto</a></div><button class="btn primary" type="button" data-contact="one">Get in touch</button></nav>
+  <nav><a class="logo" href="./" style="text-decoration:none" aria-label="Maria, home">Mar<span class="di">&#305;</span>a</a><div class="mm-menu"><a href="work.html">Work</a><a href="ai.html" style="color:var(--accent)">AI</a><a href="talks.html">Talks</a><a href="manifesto.html">Manifesto</a></div><button class="btn primary" type="button" data-contact="one">Get in touch</button></nav>
 
   <header class="hero">
     <div class="hero-grid">
